@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grafiqonbd | Flexo Plates, CTP Plates and Printing Machines</title>
+<meta name="description" content="Grafiqonbd supplies flexo printing plates, CTP plates, and flexo, offset and digital printing machines. Request a quote today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F3F5F7; --ink:#12203A; --muted:#55627A; --line:#D5DBE3; --white:#fff;
+  --c:#00A3D9; --m:#D81F6B; --y:#F5C400;
+  --font:'Archivo',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--c);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1080px;margin:0 auto}
+.logo{font-weight:800;font-size:22px;text-decoration:none;letter-spacing:-.5px}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:500;font-size:15px;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--ink);color:var(--white);padding:13px 22px;border-radius:4px;font-weight:700;text-decoration:none;border:0;font:inherit;font-weight:700;cursor:pointer}
+.btn:hover{background:#1d3157}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn.alt:hover{background:var(--ink);color:var(--white)}
+.btn.wa{background:#1FA855}
+.btn.wa:hover{background:#178a45}
+
+/* hero: ink drops and colour bar, like a press test strip */
+.hero{background:var(--ink);color:var(--white);padding:64px 0 0;overflow:hidden}
+.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.08;font-weight:800;letter-spacing:-1.5px;max-width:760px}
+.hero p{margin-top:18px;max-width:560px;color:#C5CFE0;font-size:18px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero .btn{background:var(--white);color:var(--ink)}
+.hero .btn.alt{background:transparent;color:var(--white);border-color:#5C6C8C}
+.hero .btn.alt:hover{background:var(--white);color:var(--ink)}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);margin-top:56px;height:34px}
+.strip span:nth-child(1){background:var(--c)}
+.strip span:nth-child(2){background:var(--m)}
+.strip span:nth-child(3){background:var(--y)}
+.strip span:nth-child(4){background:#000}
+.reg{position:absolute;right:20px;top:0;width:120px;height:120px;opacity:.18}
+.heroin{position:relative}
+
+section{padding:64px 0}
+h2{font-size:clamp(26px,4vw,36px);line-height:1.15;letter-spacing:-.8px;font-weight:800}
+.lead{color:var(--muted);margin-top:10px;max-width:620px}
+.group{margin-top:40px}
+.group h3{font-size:22px;font-weight:700;padding-left:14px;border-left:6px solid var(--c)}
+.group.m h3{border-color:var(--m)}
+.group.y h3{border-color:var(--y)}
+.group p.d{color:var(--muted);margin:8px 0 18px 20px;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.item{background:var(--white);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.ph{aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#E6EAF0,#E6EAF0 10px,#EEF1F5 10px,#EEF1F5 20px);display:grid;place-items:center;color:#8A95A8;font-size:14px}
+.item div.b{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.item h4{font-size:18px;font-weight:700}
+.item p{font-size:15px;color:var(--muted);flex:1}
+.item a.q{font-weight:700;font-size:15px;color:var(--ink);text-decoration-thickness:2px;text-underline-offset:4px}
+
+.why{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.why ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px;margin-top:28px}
+.why li strong{display:block;font-size:18px;margin-bottom:4px}
+.why li{color:var(--muted);font-size:15px}
+
+.quote{display:grid;grid-template-columns:1fr;gap:32px}
+@media(min-width:860px){.quote{grid-template-columns:1fr 1.2fr}}
+.contact p{margin-top:12px}
+.contact .btn{margin-top:18px}
+form{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:24px;display:grid;gap:14px}
+label{font-weight:500;font-size:15px;display:grid;gap:6px}
+input,select,textarea{font:inherit;padding:11px 12px;border:1px solid #B8C1CE;border-radius:4px;background:var(--white);color:var(--ink);width:100%}
+textarea{min-height:110px;resize:vertical}
+.hp{position:absolute;left:-9999px}
+.row{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:560px){.row{grid-template-columns:1fr 1fr}}
+.msg{font-size:15px;min-height:22px}
+footer{background:var(--ink);color:#C5CFE0;padding:32px 0;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--white)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#top">Grafiqonbd</a>
+    <nav aria-label="Main">
+      <a href="#flexo-plates">Flexo plates</a>
+      <a href="#ctp-plates">CTP plates</a>
+      <a href="#machines">Machines</a>
+      <a href="#about">About</a>
+      <a href="#quote">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap heroin">
+    <svg class="reg" viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="3" aria-hidden="true"><circle cx="50" cy="50" r="28"/><circle cx="50" cy="50" r="10"/><path d="M50 0v100M0 50h100"/></svg>
+    <h1>Plates and presses for printers who can't afford downtime.</h1>
+    <p>Grafiqonbd supplies flexo printing plates, CTP plates, and flexo, offset and digital printing machines. Tell us what you print and we'll quote the right setup.</p>
+    <div class="cta">
+      <a class="btn" href="#quote">Request a quote</a>
+      <a class="btn alt" href="https://wa.me/8801354296464" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </div>
+  <div class="strip" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+</div>
+
+<section id="products">
+  <div class="wrap">
+    <h2>What we supply</h2>
+    <p class="lead">Consumables for daily production and machines for new or expanding print rooms. Don't see what you need? Ask us.</p>
+
+    <div class="group" id="flexo-plates">
+      <h3>Flexo printing plates</h3>
+      <p class="d">Photopolymer plates for packaging, labels, corrugated and film printing.</p>
+      <div class="grid">
+        <article class="item"><div class="ph">Photo coming soon</div><div class="b"><h4>Digital flexo plates</h4><p>For laser imaging with fine detail and clean, consistent solids.</p><a class="q" href="#quote" data-product="Flexo printing plates">Request a quote</a></div></article>
+        <article class="item"><div class="ph">Photo coming soon</div><div class="b"><h4>Analog flexo plates</h4><p>Film-exposed plates for general label and packaging jobs.</p><a class="q" href="#quote" data-product="Flexo printing plates">Request a quote</a></div></article>
+        <article class="item"><div class="ph">Photo coming soon</div><div class="b"><h4>Plate thickness options</h4><p>Choose the thickness that matches your press and substrate.</p><a class="q" href="#quote" data-product="Flexo printing plates">Request a quote</a></div></article>
+      </div>
+    </div>
+
+    <div class="group m" id="ctp-plates">
+      <h3>CTP plates</h3>
+      <p class="d">Computer-to-plate aluminium plates for offset printing.</p>
+      <div class="grid">
+        <article class="item"><div class="ph">Photo coming soon</div><div class="b"><h4>Thermal CTP plates</h4><p>Stable in daylight and suited to long, high-quality runs.</p><a class="q" href="#quote" data-product="CTP plates">Request a quote</a></div></article>
+        <article class="item"><div class="ph">Photo coming soon</div><div class="b"><h4>Violet CTP plates</h4><p>For violet laser platesetters, a common choice for commercial printers.</p><a class="q" href="#quote" data-product="CTP plates">Request a quote</a></div></article>
+        <article class="item"><div class="ph">Photo coming soon</div><div class="b"><h4>Custom sizes</h4><p>Tell us your press format and we'll quote matching plate sizes.</p><a class="q" href="#quote" data-product="CTP plates">Request a quote</a></div></article>
+      </div>
+    </div>
+
+    <div class="group y" id="machines">
+      <h3>Printing machines</h3>
+      <p class="d">New machines for packaging, labels and commercial print.</p>
+      <div class="grid">
+        <article class="item"><div class="ph">Photo coming soon</div><div class="b"><h4>Flexo printing machines</h4><p>Narrow and wide web presses for labels, bags, cartons and film.</p><a class="q" href="#quote" data-product="Flexo printing machine">Request a quote</a></div></article>
+        <article class="item"><div class="ph">Photo coming soon</div><div class="b"><h4>Offset printing machines</h4><p>Sheet-fed presses for books, brochures, packaging and stationery.</p><a class="q" href="#quote" data-product="Offset printing machine">Request a quote</a></div></article>
+        <article class="item"><div class="ph">Photo coming soon</div><div class="b"><h4>Digital printing machines</h4><p>Short runs, variable data and fast turnaround without plates.</p><a class="q" href="#quote" data-product="Digital printing machine">Request a quote</a></div></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="about">
+  <div class="wrap">
+    <h2>About Grafiqonbd</h2>
+    <p class="lead">We help print shops and packaging converters find the right plates and machines, and we answer quickly.</p>
+    <ul>
+      <li><strong>Match to your press</strong>Send your press model, substrate and run length. We recommend what fits.</li>
+      <li><strong>Clear quotes</strong>You get pricing, specifications and delivery details in one reply.</li>
+      <li><strong>Reorders made simple</strong>Message us on WhatsApp or email when stock runs low.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="quote">
+  <div class="wrap quote">
+    <div class="contact">
+      <h2>Request a quote</h2>
+      <p class="lead">Tell us what you need and we'll reply by email or WhatsApp.</p>
+      <p>Email: <a href="mailto:kamran.ahmed@grafiqonbd.com">kamran.ahmed@grafiqonbd.com</a></p>
+      <p>WhatsApp and phone: <a href="tel:+8801354296464">+880 1354 296464</a></p>
+      <a class="btn wa" href="https://wa.me/8801354296464" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+
+    <form id="qf" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="1a40be58-a9ea-432d-97de-9dbb8ebf49f7">
+      <input type="hidden" name="subject" value="New quote request from grafiqonbd website">
+      <input type="hidden" name="from_name" value="Grafiqonbd website">
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="row">
+        <label>Your name<input name="name" required autocomplete="name"></label>
+        <label>Company<input name="company" autocomplete="organization"></label>
+      </div>
+      <div class="row">
+        <label>Email<input type="email" name="email" required autocomplete="email"></label>
+        <label>Phone or WhatsApp<input type="tel" name="phone" autocomplete="tel"></label>
+      </div>
+      <label>Product
+        <select name="product" id="product">
+          <option>Flexo printing plates</option>
+          <option>CTP plates</option>
+          <option>Flexo printing machine</option>
+          <option>Offset printing machine</option>
+          <option>Digital printing machine</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label>Details (size, quantity, press model)<textarea name="message" required></textarea></label>
+      <button class="btn" type="submit">Send quote request</button>
+      <p class="msg" id="msg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr">2026</span> Grafiqonbd. All rights reserved.</span>
+    <span><a href="mailto:kamran.ahmed@grafiqonbd.com">kamran.ahmed@grafiqonbd.com</a></span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.querySelectorAll('a[data-product]').forEach(function(a){
+  a.addEventListener('click',function(){
+    var s=document.getElementById('product');
+    for(var i=0;i<s.options.length;i++){if(s.options[i].text===a.dataset.product){s.selectedIndex=i;}}
+  });
+});
+var f=document.getElementById('qf'),m=document.getElementById('msg');
+f.addEventListener('submit',function(e){
+  e.preventDefault();
+  m.textContent='Sending...';
+  fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
+   .then(function(r){return r.json();})
+   .then(function(d){
+     if(d.success===true||d.success==='true'){m.textContent='Thanks. We received your request and will reply soon.';f.reset();}
+     else{m.textContent='Could not send. Please email us or use WhatsApp.';}
+   })
+   .catch(function(){m.textContent='Could not send. Please email us or use WhatsApp.';});
+});
+</script>
+</body>
+</html>
