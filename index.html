@@ -60,6 +60,8 @@ h2{font-size:clamp(26px,4vw,36px);line-height:1.15;letter-spacing:-.8px;font-wei
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
 .item{background:var(--white);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
 .ph{aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#E6EAF0,#E6EAF0 10px,#EEF1F5 10px,#EEF1F5 20px);display:grid;place-items:center;color:#8A95A8;font-size:14px}
+.item img{width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff;padding:10px;border-bottom:1px solid var(--line)}
+.spec{list-style:none;font-size:14px;color:var(--muted);display:grid;gap:2px}
 .item div.b{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}
 .item h4{font-size:18px;font-weight:700}
 .item p{font-size:15px;color:var(--muted);flex:1}
@@ -143,10 +145,21 @@ footer a{color:var(--white)}
     </div>
 
     <div class="group y" id="machines">
-      <h3>Printing machines</h3>
-      <p class="d">New machines for packaging, labels and commercial print.</p>
+      <h3>Label and tape printing machines</h3>
+      <p class="d">Presses and finishing machines for garment labels, woven tape and ribbon. Specifications can change, so ask us to confirm before you order.</p>
       <div class="grid">
-        <article class="item"><div class="ph">Photo coming soon</div><div class="b"><h4>Flexo printing machines</h4><p>Narrow and wide web presses for labels, bags, cartons and film.</p><a class="q" href="#quote" data-product="Flexo printing machine">Request a quote</a></div></article>
+        <article class="item"><img src="jr-1282.jpg" alt="JR-1282 flexo label printing machine" loading="lazy"><div class="b"><h4>JR-1282 flexo label press</h4><p>Prints up to 8 colours on the front and 2 on the back of ribbon, satin and nylon tape. Takes water-based and oil-based ink.</p><ul class="spec"><li>Speed up to 70 m/min</li><li>Print width 140 mm, length 111–300 mm</li><li>6.7 kW, 1,250 kg</li></ul><a class="q" href="#quote" data-product="Label flexo printing machine">Request a quote</a></div></article>
+        <article class="item"><img src="jr-1500.jpg" alt="JR-1500 series flexo label printing machine" loading="lazy"><div class="b"><h4>JR-1500 series flexo press</h4><p>A range from 2 to 8 colours, single or double-sided, for woven-style tape, cotton tape and adhesive tape.</p><ul class="spec"><li>Speed up to 60 m/min</li><li>Max web width 155 mm</li><li>Print length 108–401 mm</li></ul><a class="q" href="#quote" data-product="Label flexo printing machine">Request a quote</a></div></article>
+        <article class="item"><img src="jr-1461s.jpg" alt="JR-1461S flexo label printing machine with die cutting" loading="lazy"><div class="b"><h4>JR-1461S flexo label press</h4><p>Flexo label press for water-based and oil-based ink, with infrared and UV drying and in-line round die cutting.</p><ul class="spec"><li>Speed up to 90 m/min</li><li>Print width 140 mm, length 111–254 mm</li><li>16 kW, 220 V / 380 V</li></ul><a class="q" href="#quote" data-product="Label flexo printing machine">Request a quote</a></div></article>
+        <article class="item"><img src="jd-3005.jpg" alt="JD-3005 automatic silk screen trademark printing machine" loading="lazy"><div class="b"><h4>JD-3005 silk screen label press</h4><p>Fully automatic silk screen line with servo feeding, for thick, bold ink on trademarks and tape. 2 to 5 colour models.</p><ul class="spec"><li>Print area 800 × 280 mm</li><li>300–1,500 prints per hour</li><li>Remote network support</li></ul><a class="q" href="#quote" data-product="Silk screen label printing machine">Request a quote</a></div></article>
+        <article class="item"><img src="jc-3080.jpg" alt="JC-3080 ultrasonic digital label cutter" loading="lazy"><div class="b"><h4>JC-3080 ultrasonic label cutter</h4><p>Digital-control cutter that seals the label edge with ultrasonic heat and stacks finished labels.</p><ul class="spec"><li>Cut length 10–999 mm, width 10–75 mm</li><li>Up to 700 pcs/min (JC-3080B)</li><li>220 V, 1.5 kW</li></ul><a class="q" href="#quote" data-product="Label cutting and folding machine">Request a quote</a></div></article>
+        <article class="item"><img src="jz-2817.jpg" alt="JZ-2817 multi-function cutting and folding machine" loading="lazy"><div class="b"><h4>JZ-2817 cutting and folding machine</h4><p>Cold and hot cutting with three fold styles: end fold, centre fold and mitre fold. Built for fabric labels.</p><ul class="spec"><li>Cut length 18–160 mm, width 10–55 mm</li><li>Up to 200 pcs/min</li><li>200–240 V, 2.5 kW</li></ul><a class="q" href="#quote" data-product="Label cutting and folding machine">Request a quote</a></div></article>
+      </div>
+    </div>
+    <div class="group y" id="other-machines">
+      <h3>Offset and digital printing machines</h3>
+      <p class="d">Tell us your job and budget and we will send options.</p>
+      <div class="grid">
         <article class="item"><div class="ph">Photo coming soon</div><div class="b"><h4>Offset printing machines</h4><p>Sheet-fed presses for books, brochures, packaging and stationery.</p><a class="q" href="#quote" data-product="Offset printing machine">Request a quote</a></div></article>
         <article class="item"><div class="ph">Photo coming soon</div><div class="b"><h4>Digital printing machines</h4><p>Short runs, variable data and fast turnaround without plates.</p><a class="q" href="#quote" data-product="Digital printing machine">Request a quote</a></div></article>
       </div>
@@ -171,7 +184,7 @@ footer a{color:var(--white)}
     <div class="contact">
       <h2>Request a quote</h2>
       <p class="lead">Tell us what you need and we'll reply by email or WhatsApp.</p>
-      <p>Email: <a href="mailto:info@grafiqonbd.com">info@grafiqonbd.com</a></p>
+      <p>Email: <a href="mailto:kamran.ahmed@grafiqonbd.com">kamran.ahmed@grafiqonbd.com</a></p>
       <p>WhatsApp and phone: <a href="tel:+8801354296464">+880 1354 296464</a></p>
       <a class="btn wa" href="https://wa.me/8801354296464" target="_blank" rel="noopener">Chat on WhatsApp</a>
     </div>
@@ -193,7 +206,9 @@ footer a{color:var(--white)}
         <select name="product" id="product">
           <option>Flexo printing plates</option>
           <option>CTP plates</option>
-          <option>Flexo printing machine</option>
+          <option>Label flexo printing machine</option>
+          <option>Silk screen label printing machine</option>
+          <option>Label cutting and folding machine</option>
           <option>Offset printing machine</option>
           <option>Digital printing machine</option>
           <option>Other</option>
@@ -210,7 +225,7 @@ footer a{color:var(--white)}
 <footer>
   <div class="wrap">
     <span>&copy; <span id="yr">2026</span> Grafiqonbd. All rights reserved.</span>
-    <span><a href="mailto:info@grafiqonbd.com">info@grafiqonbd.com</a></span>
+    <span><a href="mailto:kamran.ahmed@grafiqonbd.com">kamran.ahmed@grafiqonbd.com</a></span>
   </div>
 </footer>
 
